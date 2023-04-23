@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "filtered_seed_fabric",
+  "version": "${version}",
+  "name": "Filtered Seed Fabric",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/mspi21/FilteredSeedFabric"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/FilteredSeedFabric/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "eu.mspi.filteredseedfabric.client.FilteredSeedFabricClient"
+    ],
+    "main": [
+      "eu.mspi.filteredseedfabric.FilteredSeedFabric"
+    ]
+  },
+  "mixins": [
+    "FilteredSeedFabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
